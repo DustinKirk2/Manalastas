@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" class="logo" alt="Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contactus.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="icon-cart" id="cart-button">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                </svg>
+                <span id="cart-count">0</span>
+            </div>
+            <div id="cart-total-navbar" class="cart-total"></div>
+            <div id="cart-dropdown" class="cart-dropdown">
+                <div id="cart-items" class="cart-items"></div>
+                <div class="cart-total">
+                    Total: $<span id="cart-total">0.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Contact Us</h1>
+                <p>Feel free to reach out to us for any inquiries or feedback.</p>
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
